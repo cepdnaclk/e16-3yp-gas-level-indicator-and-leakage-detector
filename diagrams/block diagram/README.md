@@ -1,1 +1,1 @@
-### this is the block diagram
+### This is the block diagram of this project.
