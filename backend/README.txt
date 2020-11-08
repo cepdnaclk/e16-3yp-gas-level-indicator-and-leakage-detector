@@ -4,8 +4,14 @@ pip3 install fastapi
 uvicorn----------
 pip3 install uvicorn
 
-passlib[bcrypt]
-pydantic[email]
+pydantic----------
+pip3 install pydantic
+
+passlib----------
+pip3 install passlib
+
+bcrypt----------
+pip3 install bcrypt
 
 Postman signup body-------
 {
