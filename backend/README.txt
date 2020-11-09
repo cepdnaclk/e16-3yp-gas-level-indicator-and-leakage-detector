@@ -1,3 +1,5 @@
+Initial configurations ---------
+
 fastapi----------
 pip3 install fastapi
 
