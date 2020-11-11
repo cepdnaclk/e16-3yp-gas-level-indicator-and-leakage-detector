@@ -1,21 +1,8 @@
 Initial configurations ---------
+pip3 install -r requirements.txt
 
-fastapi----------
-pip3 install fastapi
 
-uvicorn----------
-pip3 install uvicorn
-
-pydantic----------
-pip3 install pydantic
-
-passlib----------
-pip3 install passlib
-
-bcrypt----------
-pip3 install bcrypt
-
-Postman signup body-------
+Postman signup body sample  input -------
 {
 	"username": "bytecallers",
 	"password": "1234",
@@ -24,7 +11,7 @@ Postman signup body-------
 }
 
 
-Postman login--------
+Postman login sample input --------
 {
 	"username": "bytecallers",
 	"password": "1234"
