@@ -1,1 +1,1 @@
-This is the Container diagram of this project.
+This is the Component diagram of this project.
