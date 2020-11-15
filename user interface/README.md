@@ -1,1 +1,1 @@
-This folder contains the related files to the mobile application.
+This folder contains the files related to the mobile application.
