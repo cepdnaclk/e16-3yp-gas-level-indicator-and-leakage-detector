@@ -1,0 +1,22 @@
+{
+  "name": "sample",
+  "version": "1.0.0",
+  "description": "first app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sudamkalpage/Sample-app.git"
+  },
+  "author": "Sudam Kalpage",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sudamkalpage/Sample-app/issues"
+  },
+  "homepage": "https://github.com/sudamkalpage/Sample-app#readme",
+  "dependencies": {
+    "pug": "^3.0.0"
+  }
+}
