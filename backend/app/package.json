@@ -17,6 +17,9 @@
   },
   "homepage": "https://github.com/sudamkalpage/Sample-app#readme",
   "dependencies": {
-    "pug": "^3.0.0"
+    "express": "^4.17.1",
+    "mysql": "^2.18.1",
+    "mysql3": "^0.4.16",
+    "nodemon": "^2.0.7"
   }
 }
