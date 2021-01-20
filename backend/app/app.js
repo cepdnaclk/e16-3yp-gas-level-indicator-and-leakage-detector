@@ -1,6 +1,7 @@
 const express = require('express')
 const bodyparser = require('body-parser');
 const usersroute = require('./routes/users')
+const signuproute = require('./routes/signup')
 var connection = require('./connection')
 
 //init app
@@ -15,7 +16,7 @@ app.get('/',function(req,res){
 app.get('/login',function(req,res){
     res.send('Login page')
 })
-
+app.use('/signup',signuproute)
 app.use('/users',usersroute)
 
 //Get an user
@@ -33,7 +34,7 @@ app.delete('/users/:id', (req, res) => {
         else console.log(err);
     })
 })
-
+  
 //start server
 app.listen(port,function(req,res){
     console.log(`Example app listening at http://localhost:${port}`)
