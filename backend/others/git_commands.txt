@@ -1,0 +1,8 @@
+git add .
+git commit -m 'message'
+git status
+git checkout master
+git status
+git merge login
+git status
+git checkout login
