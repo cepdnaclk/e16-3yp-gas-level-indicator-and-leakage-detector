@@ -1,0 +1,34 @@
+GET http://localhost:9001
+###
+POST http://localhost:9001/login
+Content-Type: application/json
+
+{
+    "email":"kasuni@gmail.com",
+    "password":"kasuni"
+}
+###
+POST http://localhost:9000/history
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Imthc3VuaUBnbWFpbC5jb20iLCJpYXQiOjE2MTIzMDcyMTgsImV4cCI6MTYxMjMxMDgxOH0.-yVZadpK4brgckkTwa4oKoTB64gVC3Ja5LRuRN_Ii84
+
+{
+    "email":"kasuni@gmail.com"
+}
+###
+POST http://localhost:9001/token
+Content-Type: application/json
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthdmVlbkBnbWFpbC5jb20iLCJpYXQiOjE2MTIzMDY1MzEsImV4cCI6MTYxMjMxMDEzMX0.8EE3axBtNjBPxPADdk2VetfAZiLj0uUlBSsUNuG9PZk"
+}
+###
+DELETE http://localhost:9001/logout
+Content-Type: application/json
+
+{ 
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthdmVlbkBnbWFpbC5jb20iLCJpYXQiOjE2MTIxNjc5NDh9.Fg5uQMKi55wMP0QVM-ACqnrM6bfbl6rNeOwlPMzxfRE"
+}
+###
+GET http://localhost:9000
+
+
