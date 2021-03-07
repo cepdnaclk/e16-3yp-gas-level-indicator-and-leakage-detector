@@ -1,4 +1,5 @@
 class SignupResponseModel {
+  /*
   final String statusCode;
   final String error;
 
@@ -6,8 +7,14 @@ class SignupResponseModel {
 
   factory SignupResponseModel.fromJson(Map<String, dynamic> json) {
     return SignupResponseModel(
-        error: json["error"] != null ? json["error"] : "", statusCode: 'OK');
+        error: json["error"] != null ? json["error"] : "", statusCode: 'OK2');
   }
+  */
+
+  final String responseBody;
+  final String statusCode;
+
+  SignupResponseModel({this.responseBody, this.statusCode});
 }
 
 class SignupRequestModel {

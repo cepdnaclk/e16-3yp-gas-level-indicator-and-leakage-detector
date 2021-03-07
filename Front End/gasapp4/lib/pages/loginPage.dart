@@ -4,6 +4,8 @@ import 'package:gasapp4/api/api_service.dart';
 import 'package:gasapp4/model/login_model.dart';
 import 'package:gasapp4/pages/devicesPage.dart';
 import 'package:gasapp4/pages/noDevicesWarning.dart';
+import 'package:gasapp4/pages/welcomePage.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 import '../ProgressHUD.dart';
 
@@ -137,6 +139,8 @@ class _LoginPageState extends State<LoginPage> {
 
                               APIService apiService = new APIService();
                               apiService.login(loginRequestModel).then((value) {
+                                print('value is');
+                                print(value);
                                 if (value != null) {
                                   setState(() {
                                     isApiCallProcess = false;
@@ -158,6 +162,11 @@ class _LoginPageState extends State<LoginPage> {
                                         SnackBar(content: Text(value.error));
                                     scaffoldKey.currentState
                                         .showSnackBar(snackBar);
+                                    Navigator.push(
+                                        context,
+                                        MaterialPageRoute(
+                                            builder: (context) =>
+                                                WelcomePage()));
                                   }
                                 }
                               });

@@ -6,6 +6,7 @@ import 'package:gasapp4/pages/devicesPage.dart';
 import 'package:flutter/gestures.dart';
 import 'package:gasapp4/pages/navigationPanel.dart';
 import 'package:gasapp4/pages/zeroGasWarning.dart';
+import 'package:flutter_barcode_scanner/flutter_barcode_scanner.dart';
 
 class AddDevicePage extends StatefulWidget {
   AddDevicePage({Key key, this.title}) : super(key: key);
@@ -25,6 +26,20 @@ class _AddDevicePageState extends State<AddDevicePage> {
   void initState() {
     super.initState();
     addDeviceRequestModel = new AddDeviceRequestModel();
+  }
+
+  String barCode = '';
+
+  Future scanBarcodeNormal() async {
+    String barcodeScanRes;
+
+    barcodeScanRes = await FlutterBarcodeScanner.scanBarcode(
+        "#ff6666", "Cancel", true, ScanMode.QR);
+    print(barcodeScanRes);
+
+    setState(() {
+      barCode = barcodeScanRes;
+    });
   }
 
   Widget _addDevice() {
@@ -56,7 +71,7 @@ class _AddDevicePageState extends State<AddDevicePage> {
                 Navigator.push(context,
                     MaterialPageRoute(builder: (context) => DevicesPage()));
               } else {
-                final snackBar = SnackBar(content: Text(value.error));
+                final snackBar = SnackBar(content: Text(value.responseBody));
                 scaffoldKey.currentState.showSnackBar(snackBar);
               }
             }
@@ -80,6 +95,38 @@ class _AddDevicePageState extends State<AddDevicePage> {
   }
 
   Widget _deviceID() {
+    return InkWell(
+      child: Container(
+        width: MediaQuery.of(context).size.width,
+        alignment: Alignment.center,
+        decoration: BoxDecoration(
+            borderRadius: BorderRadius.all(Radius.circular(5)),
+            boxShadow: <BoxShadow>[
+              BoxShadow(
+                  color: Color(0xffdf8e33).withAlpha(100),
+                  offset: Offset(2, 4),
+                  blurRadius: 8,
+                  spreadRadius: 2)
+            ],
+            color: Colors.white),
+        child: Container(
+          width: MediaQuery.of(context).size.width,
+          padding: EdgeInsets.symmetric(vertical: 13),
+          alignment: Alignment.center,
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.all(Radius.circular(5)),
+            border: Border.all(color: Colors.white, width: 2),
+          ),
+          child: Text(
+            'Scan Device ID QR code',
+            style: TextStyle(fontSize: 20, color: Colors.white),
+          ),
+        ),
+      ),
+    );
+  }
+
+  Widget _scanQR() {
     return InkWell(
       child: Container(
         width: MediaQuery.of(context).size.width,
@@ -168,7 +215,8 @@ class _AddDevicePageState extends State<AddDevicePage> {
                   SizedBox(
                     height: 50,
                   ),
-                  _deviceID(),
+                  //_deviceID(),
+                  _scanQR(),
                   SizedBox(
                     height: 30,
                   ),

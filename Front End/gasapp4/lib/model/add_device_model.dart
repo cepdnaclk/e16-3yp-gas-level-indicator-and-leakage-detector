@@ -1,4 +1,5 @@
 class AddDeviceResponseModel {
+  /*
   final String statusCode;
   final String error;
 
@@ -8,6 +9,12 @@ class AddDeviceResponseModel {
     return AddDeviceResponseModel(
         error: json["error"] != null ? json["error"] : "", statusCode: 'OK');
   }
+  */
+
+  final String responseBody;
+  final String statusCode;
+
+  AddDeviceResponseModel({this.responseBody, this.statusCode});
 }
 
 class AddDeviceRequestModel {

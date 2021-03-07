@@ -193,19 +193,17 @@ class _SignUpPageState extends State<SignUpPage> {
                             if (validateAndSave()) {
                               print(signupRequestModel.toJson());
 
-                              Navigator.push(
-                                  context,
-                                  MaterialPageRoute(
-                                      builder: (context) => LoginPage()));
-
                               setState(() {
                                 isApiCallProcess = true;
                               });
 
                               APIService apiService = new APIService();
+                              print(apiService);
                               apiService
                                   .signup(signupRequestModel)
                                   .then((value) {
+                                print('value is');
+                                print(value);
                                 if (value != null) {
                                   setState(() {
                                     isApiCallProcess = false;
@@ -222,8 +220,8 @@ class _SignUpPageState extends State<SignUpPage> {
                                         MaterialPageRoute(
                                             builder: (context) => LoginPage()));
                                   } else {
-                                    final snackBar =
-                                        SnackBar(content: Text(value.error));
+                                    final snackBar = SnackBar(
+                                        content: Text(value.responseBody));
                                     scaffoldKey.currentState
                                         .showSnackBar(snackBar);
                                   }
