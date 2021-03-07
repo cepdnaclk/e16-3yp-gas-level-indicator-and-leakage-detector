@@ -1,0 +1,7 @@
+200 :ok -successfully done for get,post
+204 - successfully done for delete no content to show
+
+400 incorrect syntax
+401 :Unauthorized - wrong password
+403 :forbidden - authorized but expired
+409 :conflict - email already exists

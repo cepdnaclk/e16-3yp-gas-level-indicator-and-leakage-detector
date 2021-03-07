@@ -1,0 +1,52 @@
+/* request json objects*/
+
+./signup
+{
+    "email":"kasuni@gmail.com",
+    "password":"kasuni",
+    "mobile_number":"0754563217"
+}
+./login
+{
+    "email":"kasuni@gmail.com",
+    "password":"kasuni"
+}
+
+./newdevice
+{
+    "device_id":"d0006",
+    "device_name":"kaveen kitchen gas"
+}
+
+./devices
+{
+    "email":"kasuni@gmail.com"
+}
+
+./percentage
+{
+    "device_id":"d0006"
+}
+
+./history
+{
+    "device_id":"d0004"
+}
+
+./newtank
+{
+    "device_id":"d0006",
+    "brand":"laughs gas",
+    "size":25 
+}
+
+./leakage
+{
+    "device_id":"d0006"
+}
+
+./newname
+{
+    "device_id":"d0004",
+    "device_name":"new gas cooker"
+}
