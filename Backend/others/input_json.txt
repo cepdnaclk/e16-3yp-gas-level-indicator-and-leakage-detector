@@ -23,6 +23,12 @@
     "email":"kasuni@gmail.com"
 }
 
+./percentage/update
+{
+    "device_id":"d0006",
+    "percentage":"50"
+}
+
 ./percentage
 {
     "device_id":"d0006"
