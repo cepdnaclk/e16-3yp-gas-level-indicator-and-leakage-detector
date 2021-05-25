@@ -1,0 +1,36 @@
+/* response json */
+
+./history
+[
+    {
+        "email": "kasuni@gmail.com",
+        "used_day": "2020-12-31T18:30:00.000Z",
+        "used_weight": 42
+    },
+    {
+        "email": "kasuni@gmail.com",
+        "used_day": "2021-01-01T18:30:00.000Z",
+        "used_weight": 42
+    }
+]
+
+./devices
+[
+    {
+        "device_id": "d0004"
+    }
+]
+
+./percentage
+[
+    {
+        "balance_percentage": 10
+    }
+]
+
+./leakage
+[
+    {
+        "leakage": 0
+    }
+]
