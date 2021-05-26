@@ -17,9 +17,6 @@ Gas Level Indicator and Leakage Detector is a system aimed on LP gas tank users 
 ### Gas level indicator
 The device display and the mobile/web application will be updated in real-time, displaying the current existing gas percentage in the tank.
 
-### A delivery system for gas renewal
-When a gas tank is finished, the user will be notified and will be asked whether they need delivery of a gas tank or not. According to their selection, a new gas tank will be delivered to the user.
-
 ### Gas leakage detector
 If a gas leakage happens around the gas tank, a gas sensor will detect the leakage. As soon as the leakage is detected, a buzzer will alarm the user about it while sending a notification to the mobile/web application.
 
