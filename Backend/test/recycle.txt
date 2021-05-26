@@ -1,6 +1,0 @@
-delete from users where email = "yasiru@gmail.com" ;
-delete from users where email = "namal@gmail.com" ;
-delete from users where email = "niroshana@gmail.com" ;
-delete from users where email = "ramal@gmail.com" ;
-delete from users where email = "didula@gmail.com" ;
-delete from devices where device_id = "d0999";
