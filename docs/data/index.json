@@ -20,22 +20,46 @@
             "email": "e16275@eng.pdn.ac.lk",
             "eNumber": "E/16/275",
             "github_profile":"https://github.com/HashanEranga",
-            "linkedin_profile":"#"
+            "linkedin_profile":"https://www.linkedin.com/in/hashan-eranga-57584b136/"
         }
     ],
     "supervisors": [
         {
-            "name": "Dr. Supervisor 1",
-            "email": "email@eng.pdn.ac.lk",
+            "name": "Dr. Isuru Nawinne",
+            "email": "isurunawinne@eng.pdn.ac.lk",
             "linkedin_profile":"#",
             "researchgate_profile":"#"
         },
         {
-            "name": "Supervisor 2",
+            "name": "Prof. Roshan G. Ragel",
             "email": "email@eng.pdn.ac.lk",
-            "linkedin_profile":"#",
+            "linkedin_profile":"https://www.linkedin.com/in/roshanragel/",
             "researchgate_profile":"#"
-        }
+        },
+        {
+            "name": "Dr. Asitha Bandaranayake",
+            "email": "asithab@pdn.ac.lk",
+            "linkedin_profile":"https://www.linkedin.com/in/asithab/",
+            "researchgate_profile":"#"
+        },
+        {
+            "name": "Dr Ziyan Maraikar",
+            "email": "ziyanm@gmail.com",
+            "linkedin_profile":"https://www.linkedin.com/in/ziyan-maraikar-15539818a/?originalSubdomain=de",
+            "researchgate_profile":"#"
+        },
+                {
+            "name": "Dr. Suneth Namal",
+            "email": "namal@eng.pdn.ac.lk",
+            "linkedin_profile":"https://lk.linkedin.com/in/suneth-namal-b70b8688",
+            "researchgate_profile":"#"
+        },
+                {
+            "name": "Dr. Upul Jayasinghe,
+            "email": "upuljm@eng.pdn.ac.lk",
+            "linkedin_profile":"https://www.linkedin.com/in/upuljm/",
+            "researchgate_profile":"#"
+        },
     ],
     "tags": ["Web", "Embedded Systems"]
 }
