@@ -1,0 +1,41 @@
+{
+    "title": "Gas level indicator and Leakage detector",
+    "team": [
+        {
+            "name": "Thilini Deshika",
+            "email": "e16078@eng.pdn.ac.lk",
+            "eNumber": "E/16/078",
+            "github_profile":"https://github.com/Thilini-Deshika",
+            "linkedin_profile":"https://www.linkedin.com/in/thilini-deshika"
+        },
+        {
+            "name": "Kalpage S.W.",
+            "email": "e16168@eng.pdn.ac.lk",
+            "eNumber": "E/16/168",
+            "github_profile":"https://github.com/sudamkalpage",
+            "linkedin_profile":"https://www.linkedin.com/in/sudam-kalpage-a2415b186/"
+        },
+        {
+            "name": "Perera A.L.H.E",
+            "email": "e16275@eng.pdn.ac.lk",
+            "eNumber": "E/16/275",
+            "github_profile":"https://github.com/HashanEranga",
+            "linkedin_profile":"#"
+        }
+    ],
+    "supervisors": [
+        {
+            "name": "Dr. Supervisor 1",
+            "email": "email@eng.pdn.ac.lk",
+            "linkedin_profile":"#",
+            "researchgate_profile":"#"
+        },
+        {
+            "name": "Supervisor 2",
+            "email": "email@eng.pdn.ac.lk",
+            "linkedin_profile":"#",
+            "researchgate_profile":"#"
+        }
+    ],
+    "tags": ["Web", "Embedded Systems"]
+}
